@@ -1,0 +1,920 @@
+@font-face {
+    font-family: 'urbanist-medium';
+    src: url(../../fonts/Urbanist-Medium.ttf);
+}
+@font-face {
+    font-family: 'urbanist-regular';
+    src: url(../../fonts/Urbanist-Regular.ttf);
+}
+header#header-row {
+    background: #000000;
+    background-color: #000000;
+    box-shadow: none !important;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+header#header-row.darkheader{
+    background: #000000 !important;
+    z-index: 999;
+}
+#BlogdetailsHeader header#header-row {
+    background: #000000;
+    background-color: #000000;
+}
+#main-header {
+    max-width: 1500px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    padding: 0px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn01, .signin, .launch-dex {
+    height: 34px !important;
+    border: 1px solid #65E4A1 !important;
+    background: #65E4A1 !important;
+    color: #000000 !important;
+    font-family: 'urbanist-regular' !important;
+    font-size: 15px !important;
+    border-radius: 7px !important;
+    text-transform: capitalize !important;
+    width: 9% !important;
+}
+.btn01:focus, .signin:focus, .launch-dex:focus, .btn01:focus-visible, .signin:focus-visible, .launch-dex:focus-visible{
+    outline: none !important;
+}
+.signin{
+    background: #5ED3F0 !important;
+    color: #FFFFFF !important;
+    min-width: 90px !important;
+    width: fit-content !important;
+    height: 34px !important;
+    border: 1.5px solid #5ED3F0 !important;
+}
+.launch-dex{
+    border: 1.5px solid #5ED3F0 !important;
+    background: #000000 !important;
+    color:  #FFFFFF !important;
+    width: 72px !important;
+    height: 34px !important;
+    margin-right: 0px !important;
+}
+.launch-dex:hover{
+    background: #5ED3F0 !important;
+}
+.signin:focus, .signin:focus-visible, .launch-dex:focus, .launch-dex:focus-visible{
+    text-decoration: none !important;
+}
+ul.navlink a {
+    font-size: 14px !important;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    font-family: 'urbanist-regular' !important;
+    text-transform: capitalize !important;
+}
+/* ul.navlink a:hover{
+    color: #5ED3F0 !important;
+} */
+ul.navlink li {
+    list-style-type: none;
+    position: relative;
+}
+ul.navlink li:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 24px;
+    width: 0;
+    height: 2px;
+    background-color: #5ED3F0;
+    transition: 1s;
+}
+ul.navlink li:hover:after {
+    width: 100%;
+}
+.logo-nav{
+    width: 75%;
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+}
+.login-buttons {
+    width: 25%;
+    text-align: right;
+    column-gap: 8px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.header-logo {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding: 0px 0px 0px 0px !important;
+    max-width: fit-content;
+    height: fit-content;
+}
+.header-logo a{
+    display: flex !important;
+}
+.header-logo a img{
+    width: 110px !important;
+}
+ul.navlink {
+    width: 87% !important;
+    text-align: left !important;
+    display: flex;
+    margin-bottom: 0px;
+    align-items: center;
+    padding-left: 0px;
+    padding-bottom: 0px !important;
+    column-gap: 24px;
+}
+ul.navlink li {
+    list-style-type: none;
+}
+.storeicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    width: 67px;
+    height: 34px;
+    border: 1px solid #FFFFFF;
+    border-radius: 7px;
+}
+a.header-more, li.main_title.white_bg:last-child a{
+    padding: 16px 0px;
+}
+/* ************************************************************************** */
+.headermore_row{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: fit-content;
+}
+.header-more svg {
+    width: 18px !important;
+    height: 18px !important;
+}
+.header-more svg path{
+    fill: #FFFFFF;
+}
+.headermore_row:hover{
+    cursor: pointer;
+}
+.headermore_row:hover .mega_menu{
+    opacity: 1;
+    display: flex;
+    transition: .3s;
+}
+.mega_menu a:hover{
+    text-decoration: none !important;
+}
+/* Mega Menu */
+.mega_menu {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    opacity: 0;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 25%);
+    transition: .3s;
+    display: none;
+    min-height: 455px;
+    z-index: 10;
+}
+.mega_menu .col1 {
+    flex: 1;
+    padding-left: 11%;
+    padding-right: 90px;
+    padding-top: 40px;
+}
+.mega_menu .top_heading {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 55px;
+}
+.mega_menu .top_heading h4, .community_inner, .mega_menu .social_links {
+    width: 33.33%;
+}
+/* .connect_link_title h4:first-child {
+    width: 70%;
+} */
+/* .connect_link_title h4:last-child {
+    width: 30%;
+} */
+.mega_menu h4 {
+    font-size: 18px;
+    line-height: 24px;
+    /* text-transform: uppercase; */
+    font-family: "Hauora_bold",sans-serif;
+    padding: 10px 0 10px 0px;
+    /* margin: 0 10px; */
+    border-bottom: 0.4px solid #d0d0d0;
+    color: #000000;
+}
+.mega_menu .main_service_wrapper {
+    display: flex;
+    padding: 30px 0 10px;
+    column-gap: 55px;
+}
+.main_service a, .social_link_inner a {
+    display: block;
+    padding: 12.5px 0px;
+    color: #000000;
+    font-family: 'urbanist-regular' !important;
+    font-size: 14px;
+    line-height: 20px;
+    width: fit-content;
+}
+.main_service a:hover, .social_link_inner a:hover{
+    color: #5ED3F0 !important;
+}
+.main_service a:first-child, .social_link_inner a:first-child, .mega_menu .boxx-links a:first-child{
+    padding-top: 0px !important;
+}
+/* .community_inner {
+    flex: 1;
+} */
+/* .community_inner .main_service {
+    width: 50%;
+} */
+/* .mega_menu .main_service {
+    flex: 1;
+    text-align: left;
+    border: 0.2px solid transparent;
+    transition: .3s;
+    margin-bottom: 10px;
+} */
+/* .mega_menu .main_service_wrapper a {
+    color: #141414 !important;
+    display: inline-block;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+    font-family: 'urbanist-regular' !important;
+} */
+/* .mega_menu .main_service p {
+    font-size: 11px;
+    line-height: 1.2;
+    color: #000;
+    opacity: .4;
+    text-align: left;
+    padding: 10px 0;
+    cursor: initial;
+    transition: .3s;
+    font-family: 'urbanist-regular';
+} */
+/* .mega_menu .social_links {
+    width: 30%;
+    padding: 10px 10px 10px 0px;
+} */
+/* .mega_menu .social_links a {
+    font-size: 10px;
+    font-family: "Hauora_regular";
+    line-height: 14px;
+    margin-bottom: 30px;
+    padding: 0px 20px !important;
+} */
+.mega_menu .col2 {
+    width: 30%;
+    background: #f3f4f5;
+    padding-left: 80px;
+    padding-top: 40px;
+}
+.mega_menu .right_inner {
+    max-width: 210px;
+}
+/* .mega_menu h4 {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: "Hauora_bold",sans-serif;
+    padding: 25px 0;
+    margin: 0 10px;
+    border-bottom: 0.4px solid #d0d0d0;
+} */
+.connect_links .box {
+    margin-top: 30px;
+    border: 0.2px solid transparent;
+}
+.connect_links .box a {
+    margin: 12px 0;
+}
+.connect_links a {
+    display: inline-block;
+    text-align: left;
+    font-size: 10px;
+    line-height: 14px;
+    color: #141414;
+    margin: 15px 10px;
+    font-family: "Hauora_regular",sans-serif;
+    text-transform: capitalize;
+}
+.right_inner a p {
+    text-transform: initial;
+}
+.connect_links p {
+    font-size: 9px;
+    line-height: 12px;
+    color: #141414;
+    text-align: left;
+    opacity: .4;
+    padding: 10px 0 15px;
+    cursor: pointer;
+    font-family: 'urbanist-regular';
+}
+.connect_links svg {
+    transform: none !important;
+    margin: 0;
+}
+/* .main_title:hover .mega_menu {
+    opacity: 1;
+    display: flex;
+    transition: .3s;
+} */
+/* .mega_menu a:hover {
+    color: #104ff5;
+} */
+/* .mega_menu .main_service:hover, .connect_links .box a:hover {
+    background: rgba(16,79,245,.1);
+    border: 0.2px solid #104ff5;
+    border-radius: 2px;
+} */
+.connect_links .box a {
+    color: #141414 !important;
+    margin-top: 0px !important;
+}
+.main_title a svg {
+    margin-left: 12px;
+}
+.main_title a:hover svg{
+    transform: rotate(180deg);
+}
+.mega_menu .social-icons .icons a{
+    background: rgba(0, 0, 0, 0.1) !important;
+    width: 40px;
+    height: 40px;
+}
+.mega_menu .social-icons .icons a:hover{
+    background: #5ED3F0 !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+.mega_menu .social-icons{
+    margin-top: 20px;
+}
+.mega_menu .boxx-links a {
+    display: block !important;
+    font-size: 14px;
+    font-family: 'urbanist-regular';
+    margin-bottom: 0px;
+    padding: 15.5px 0px;
+    width: fit-content;
+}
+.mega_menu .boxx-links a:hover{
+    /* background: rgba(52, 169, 255, 0.1); */
+    /* border: 0.2px solid #5ED3F0; */
+    /* border-radius: 5px; */
+    background: none;
+    border: none;
+    border-radius: none;
+    color: #5ED3F0 !important;
+}
+.mega_menu .boxx-links{
+    margin-bottom: 40px;
+}
+/* Header Mobile App */
+#headerDownloadApp {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 1px 6px 0 rgba(0,0,0,.15);
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
+    bottom: 10px;
+    display: none;
+    padding: 0 16px 16px 16px;
+    cursor: default;
+}
+#headerDownloadApp {
+    top: 55px;
+    right: 0px;
+    bottom: auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#headerDownloadApp .download-box {
+    white-space: nowrap;
+    padding: 16px 0 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#headerDownloadApp .download-box .qr-box {
+    display: inline-flex;
+    vertical-align: top;
+    line-height: normal;
+    width: 92px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#headerDownloadApp .download-box .qr-box img{
+    width: 92px;
+    height: 92px;
+    display: block;
+    padding: 0px;
+}
+#headerDownloadApp .download-box .pc-box {
+    display: inline-flex;
+    vertical-align: top;
+    margin-left: 16px;
+    margin-top: 0px;
+    color: #fff;
+    width: 107px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+#headerDownloadApp .download-box .text {
+    text-align: left;
+    font-size: 15px;
+    color: #35384a;
+    word-break: break-word;
+    white-space: normal;
+    line-height: 20px;
+    font-family: 'hauora-regular';
+}
+#downloadlink:hover{
+    cursor: pointer;
+}
+.downloadQRCode:hover #headerDownloadApp {
+    display: block;
+}
+.downloadQRCode{
+    position: relative;
+    padding: 11px 0px
+}
+.login-buttons a{
+    margin: 11px 0px;
+}
+#main-header .login-buttons a.signin:hover {
+    background: #000000 !important;
+    border: 1px solid #5ED3F0 !important;
+}
+#header-row .MuiToolbar-regular {
+    min-height: 56px !important;
+}
+
+/* ********************  Language dropdown Styling */
+.translate_lng {
+    padding: 19px 0px;
+}
+#tran_lang h1{
+    font-size: 15px;
+    font-family: 'urbanist-regular' !important;
+}
+#ncx_token_Page #tran_lang h1{
+    min-width: 70px !important;
+}
+#language_trans{
+    position: absolute;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 15%);
+    display: none;
+    padding: 0 16px 16px 16px;
+    cursor: default;
+    top: 55px;
+    right: 0px;
+    bottom: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 180px;
+}
+.language-box {
+    padding: 16px 0 0px 0px;
+    display: block;
+}
+#tran_lang:hover {
+    cursor: pointer;
+}
+.translate_lng {
+    position: relative;
+}
+.translate_lng:hover #language_trans {
+    display: block;
+}
+.language-box a {
+    text-align: left;
+    background: none;
+    border: none;
+    color: #000000;
+    font-family: 'urbanist-regular';
+    font-size: 14px;
+    display: block;
+    margin: 8px 0px;
+    padding: 0px !important;
+}
+.language-box a:hover{
+    color: #5ED3F0 !important;
+}
+div#tran_lang {
+    display: flex;
+    gap: 5px;
+}
+div#tran_lang svg {
+    width: 10px;
+    padding-top: 5px;
+}
+div#tran_lang svg path {
+    fill: rgb(255,255,255,1);
+}
+
+@media screen and (min-width: 1400px){
+    ul.navlink a{
+        font-size: 16px !important;
+        font-family: 'urbanist-light' !important;
+    }
+}
+@media screen and (max-width: 1310px){
+    .logo-nav{
+        column-gap: 15px;
+    }
+    ul.navlink{
+        column-gap: 20px;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1240px){
+    #main-header .login-buttons a{
+        font-size: 14px !important;
+    }
+    #tran_lang h1{
+        font-size: 14px !important;
+    }
+    .logo-nav{
+        width: 75% !important;
+    }
+    .login-buttons{
+        width: 25% !important;
+    }
+    ul.navlink{
+        width: fit-content !important;
+        column-gap: 15px !important;
+    }
+    ul.navlink a{
+        font-size: 13px !important;
+    }
+    .signin, .launch-dex{
+        width: fit-content !important;
+        padding: 6px 5px !important;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1170px){
+    .logo-nav{
+        width: 78% !important;
+        column-gap: 14px !important;
+    }
+    .login-buttons{
+        width: 22% !important;
+    }
+    ul.navlink a{
+        font-size: 12px !important;
+    }
+    .header-logo a img {
+        width: 90px !important;
+    }
+    .signin, .launch-dex{
+        padding: 6px 10px !important;
+    }
+    #main-header .login-buttons a{
+        font-size: 13px !important;
+        height: 30px !important;
+    }
+    .storeicons{
+        column-gap: 12px;
+        width: 60px;
+        height: 30px;
+    }
+    #tran_lang h1{
+        font-size: 13px !important;
+    }
+    div#tran_lang svg {
+        width: 7px;
+        padding-top: 0px;
+    }
+    .downloadQRCode{
+        display: none !important;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1010px){
+    .logo-nav{
+        width: 76% !important;
+        column-gap: 14px !important;
+    }
+    .login-buttons{
+        width: 24% !important;
+    }
+    ul.navlink a{
+        font-size: 12px !important;
+    }
+    .header-logo a img {
+        width: 80px !important;
+    }
+    .signin, .launch-dex{
+        padding: 6px 5px !important;
+        height: 30px !important;
+        font-size: 10px !important;
+    }
+    .storeicons{
+        height: 30px !important;
+        width: fit-content !important;
+        column-gap: 10px !important;
+        padding: 0px 10px !important;
+    }
+    .header-more svg {
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .storeicons svg {
+        width: 12px;
+    }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px){
+    .logo-nav{
+        width: 80% !important;
+        column-gap: 14px !important;
+    }
+    .login-buttons{
+        width: 20% !important;
+    }
+    ul.navlink a{
+        font-size: 10px !important;
+    }
+    .header-logo a img {
+        width: 80px !important;
+    }
+    .signin, .launch-dex{
+        padding: 6px 5px !important;
+        height: 30px !important;
+        font-size: 10px !important;
+    }
+    .storeicons{
+        display: none;
+    }
+    .header-more svg {
+        width: 13px !important;
+        height: 13px !important;
+    }
+    .storeicons svg {
+        width: 12px;
+    }
+}
+/* @media screen and (min-width: 801px) and (max-width: 1000px){
+    ul.navlink a{
+        font-size: 10px !important;
+        padding: 0px 10px !important;
+    }
+    .header-logo{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .header-logo{
+        width: 100% !important;
+        max-width: 100px !important;
+    }
+    .logo-nav{
+        width: 74% !important;
+    }
+    .login-buttons{
+        width: 26% !important;
+    }
+    .signin, .launch-dex{
+        font-size: 12px !important;
+        height: 34px !important;
+    }
+} */
+/* Mobile Css */
+  @media screen and (max-width: 800px) {
+    .hamburger {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .mobile-launch {
+        display: none;
+    }
+    div#header-newmobile {
+        width: 100% !important;
+        padding: 10px 0px;
+        display: block !important;
+        position: fixed;
+        background: #000000;
+        top: 0;
+    }
+    .navigation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #000000;
+        box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+        justify-content: space-between;
+    }
+    .mobile-logo .header-logo a img {
+        width: 110px;
+    }
+    .mobile-logo {
+        width: fit-content;
+        text-align: left;
+    }
+    .mobile-logo .header-logo {
+        padding: 0px;
+        margin: 0 auto;
+    }
+    button.hamburger {
+        background: none !important;
+        border: 0px;
+        padding: 0px !important;
+        transform: rotate(180deg);
+    }
+    .hamburger svg {
+        width: 17px;
+        height: auto !important;
+    }
+    .navigation-menu {
+        margin-left: auto;
+    }
+    .navigation-menu li {
+        list-style-type: none;
+        margin: 0 1rem;
+    }
+    .navigation-menu li a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+    }
+    .hamburger:hover {
+        background-color: #2642af;
+    }
+    .navigation-menu ul {
+      display: none;
+    }
+    .navigation-menu.expanded {
+        position: fixed;
+        top: 0px;
+        width: 100% !important;
+        padding: 80px 40px 0px 40px ;
+        background: #000000;
+        height: 100vh;
+        z-index: -1;
+        left: 0px;
+    }
+    .navigation-menu.expanded ul {
+        display: block;
+        padding: 0px;
+    }
+    .navigation-menu.expanded ul li {
+        padding: 15px 10px;
+        margin: 0px !important;
+    }
+    .navigation-menu.expanded ul li a {
+        font-size: 19px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: 'urbanist-regular' !important;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .navigation-menu.expanded ul li a:hover{
+        color: #5ED3F0 !important;
+    }
+    #header-newmobile .navigation-menu.expanded ul li a.launching-btn{
+        width: 100% !important;
+        margin-right: 0px !important;
+        font-size: 18px !important;
+        padding: 10px 15px !important;
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent !important;
+    }
+    #header-newmobile .navigation-menu.expanded ul li a.launching-btn:hover{
+        background: #5ED3F0 !important;
+        color: #FFFFFF !important;
+    }
+    #header-newmobile nav.navigation {
+        padding: 0px 20px;
+    }
+    #header-newmobile .navigation-menu.expanded ul li a 
+    #header-newmobile nav.navigation {
+        padding: 0px 20px !important;
+    }
+    .mobile-toogle {
+        width: fit-content;
+        text-align: left !important;
+        padding-top: 2px;
+    }
+    /* .navigation-one .mobile-toogle {
+        order: 1;
+    }
+    .navitgation-one .mobile-logo{
+        order: 2;
+    } */
+    .navigation-one {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+        /* justify-content: space-between; */
+    }
+    #header-newmobile .translate_lng{
+        padding: 10px 0px;
+    }
+    #header-newmobile #language_trans{
+        top: 35px;
+        min-width: 110px;
+    }
+    #header-newmobile #tran_lang h1{
+        min-width: 80px;
+        text-align: right;
+        font-size: 16px !important;
+    }
+    .clols{
+        display: none;
+    }
+    .clols svg path{
+        fill: #FFFFFF;
+    }
+    div#header-newmobile.header-expanded.avtive .clols {
+        display: block;
+    }
+    div#header-newmobile.header-expanded.avtive .mplo {
+        display: none;
+    }
+    .dropbtn {
+        background-color: #000000 !important;
+        border: 1.5px solid #5ED3F0;
+        padding: 7px 10px 7px 14px;
+        border-radius: 7px;
+        background: url(./drop.svg);
+        background-repeat: no-repeat;
+        background-position: center right 8px;
+        background-size: 11%;
+        width: 115px;
+        font-size: 13px;
+        font-family: 'urbanist-regular';
+        text-align: left;
+        box-shadow: 0px 0px 12px 8px rgba(36, 96, 255, 0.4);
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }  
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 110px;
+        box-shadow: 0px 0px 12px 8px rgba(36, 96, 255, 0.4);
+        border-radius: 5px;
+        z-index: 1;
+        width: 110px;
+        margin-top: 10px;
+    }  
+    .dropdown-content a {
+        color: #FFFFFF;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 13px;
+        text-align: left;
+        font-family: 'urbanist-regular';
+    }
+    .dropdown-content a:hover {
+        background-color: #2E2E2E;
+        border-radius: 5px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;}
+}
+@media (min-width: 600px){
+    .css-hyum1k-MuiToolbar-root {
+        min-height: 56px !important;
+    }
+}

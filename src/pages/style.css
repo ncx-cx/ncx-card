@@ -1,0 +1,214 @@
+.card__gers {
+    padding: 40px 0px;
+}
+.row.card-balance {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.row.card-balance .balance{
+    width: 60%;
+}
+.row.card-balance .crd_div{
+    width: 30%;
+}
+.card__gers .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.ncx_card {
+    display: none;
+}
+.ncx_card.active {
+    display: block;
+}
+.ncx_card img {
+    width: 100%;
+}
+.card__tab__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+button.card_btn {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: transparent;
+    border: 1px solid #303033;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tct {
+    display: block;
+}
+.tct span, .tct-f span {
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'urbanist-light';
+    font-weight: 400;
+}
+.tct h1 {
+    margin: 0px;
+    font-size: 18px;
+    font-family: 'urbanist-medium';
+    font-weight: 400;
+    margin-bottom: 2px;
+    line-height: 23px;
+}
+.tct-f h3 {
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'urbanist-regular';
+    font-weight: 400;
+    margin-bottom: 2px;
+    line-height: 23px;
+    text-align: right;
+}
+button.card_btn.active {
+    border: 1.5px solid #5ED3F0;
+}
+button.card_btn:hover{
+    border-color: #5ED3F0;
+}
+.kyc_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+.txt h3 {
+    margin: 0px;
+    font-size: 16px;
+    font-family: 'urbanist-light';
+    font-weight: 400;
+}
+.txt p {
+    margin: 0px;
+    font-size: 12px;
+    font-family: 'urbanist-light';
+    font-weight: 400;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.kyc_div a {
+    text-decoration: none;
+    font-family: 'urbanist-medium';
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 60px;
+    height: 25px;
+    border: 1px solid #5ED3F0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kyc_div a:hover{
+    background: #5ED3F0;
+}
+.ncx_card.black.active img {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.50));
+}
+.ncx_card.active img {
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+}
+.light-mode .txt p {
+    color: #000000 !important;
+}
+.light-mode button.card_btn span {
+    color: #000000 !important;
+}
+
+
+/* balance col */
+.card_bal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.balance h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 32px;
+    font-family: 'urbanist-medium';
+    font-weight: 400;
+    line-height: 38px;
+}
+.balance h1 span{
+    font-family: 'urbanist-light';
+}
+.balance h2{
+    margin: 0px;
+    font-size: 32px;
+    font-family: 'urbanist-semibold';
+    font-weight: 400;
+    line-height: 38px;
+}
+.card_bal a {
+    width: 94px;
+    height: 38px;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'urbanist-medium';
+    text-decoration: none;
+}
+.card_bal a:hover{
+    border: 1px solid #5ED3F0;
+}
+#subheader .logo-nav a:hover{
+    border: 1px solid #5ED3F0;
+}
+#subheader .logo-nav a:hover img{
+    filter: brightness(1);
+}
+.token-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0px;
+    border-bottom: 1px solid #303033;
+}
+.trhs {
+    width: 40%;
+    border: 1px solid #303033;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.1));
+    border-radius: 10px;
+    padding: 4px 28px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.token {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.token p {
+    font-size: 16px;
+    font-family: 'urbanist-medium';
+    margin: 0px;
+}
+.token-pric p {
+    margin: 0px;
+}
+.token-pric p:nth-child(1) {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: 'urbanist-medium';
+    letter-spacing: 1px;
+}
+.token-pric p:nth-child(2) {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: 'urbanist-regular';
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5) ;
+}
