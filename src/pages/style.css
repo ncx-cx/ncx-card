@@ -146,7 +146,7 @@ button.card_btn:hover{
     font-weight: 400;
     line-height: 38px;
 }
-.card_bal a {
+a.btn-sd {
     width: 94px;
     height: 38px;
     border: 1px solid #383838;
@@ -158,7 +158,7 @@ button.card_btn:hover{
     font-family: 'urbanist-medium';
     text-decoration: none;
 }
-.card_bal a:hover{
+a.btn-sd:hover{
     border: 1px solid #5ED3F0;
 }
 #subheader .logo-nav a:hover{
@@ -211,4 +211,26 @@ button.card_btn:hover{
     font-family: 'urbanist-regular';
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.5) ;
+}
+.fgerfe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.fgerfe h1 {
+    font-size: 24px;
+    font-family: 'urbanist-medium';
+    font-weight: 400;
+    margin: 0px;
+}
+.wal__tbl table th {
+    font-size: 14px;
+    font-family: 'urbanist-medium';
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    text-align: left;
+}
+.wal__tbl table {
+    width: 100%;
 }

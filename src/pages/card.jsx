@@ -28,7 +28,7 @@ function CardHomePage()
                                 <h1>NCX Card <span>Balance</span></h1>
                                 <h2>$0.00</h2>
                             </div>
-                            <a href="#">Top Up</a>
+                            <a className="btn-sd" href="#">Top Up</a>
                         </div>
                         <div className="token-div">
                             <div className="trhs">
@@ -51,6 +51,80 @@ function CardHomePage()
                                     <p>2 Tokens</p>
                                 </div>
                             </div>
+                        </div>
+                        <div className="fgerfe">
+                            <h1>Wallet</h1>
+                            <a className="btn-sd"  href="#">View All</a>
+                        </div>
+                        <div className="wal__tbl">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Token</th>
+                                        <th>Price ($)</th>
+                                        <th>Balance (USD)</th>
+                                        <th>Balance (Crypto)</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="token">
+                                            <p>1.</p>
+                                            <Ethereum />
+                                            <h3>Ethereum</h3>
+                                        </td>
+                                        <td className="price"><p>$0.00</p></td>
+                                        <td className="bal_usd"><p>$0.00</p></td>
+                                        <td className="bal_crypto"><p>$0.00</p></td>
+                                        <td className="deposit"><a href="#">Deposit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td className="token">
+                                            <p>2.</p>
+                                            <BNB />
+                                            <h3>BNB</h3>
+                                        </td>
+                                        <td className="price"><p>$0.00</p></td>
+                                        <td className="bal_usd"><p>$0.00</p></td>
+                                        <td className="bal_crypto"><p>$0.00</p></td>
+                                        <td className="deposit"><a href="#">Deposit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td className="token">
+                                            <p>3.</p>
+                                            <USDT />
+                                            <h3>Tether</h3>
+                                        </td>
+                                        <td className="price"><p>$0.00</p></td>
+                                        <td className="bal_usd"><p>$0.00</p></td>
+                                        <td className="bal_crypto"><p>$0.00</p></td>
+                                        <td className="deposit"><a href="#">Deposit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td className="token">
+                                            <p>4.</p>
+                                            <BUSD />
+                                            <h3>BUSD</h3>
+                                        </td>
+                                        <td className="price"><p>$0.00</p></td>
+                                        <td className="bal_usd"><p>$0.00</p></td>
+                                        <td className="bal_crypto"><p>$0.00</p></td>
+                                        <td className="deposit"><a href="#">Deposit</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td className="token">
+                                            <p>5.</p>
+                                            <Avalanche />
+                                            <h3>Ethereum</h3>
+                                        </td>
+                                        <td className="price"><p>$0.00</p></td>
+                                        <td className="bal_usd"><p>$0.00</p></td>
+                                        <td className="bal_crypto"><p>$0.00</p></td>
+                                        <td className="deposit"><a href="#">Deposit</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div className="col crd_div">
