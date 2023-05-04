@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { useState } from "react";
 import './script'
 import Home from "../src/pages/card";
 import { ReactComponent as DarkMode } from './assets/images/darkmode.svg';
@@ -14,6 +15,8 @@ import { ReactComponent as Apple } from './assets/images/apple.svg';
 import { ReactComponent as Google } from './assets/images/google.svg'; 
 import QrCode from "./assets/images/ncx-QRcode.svg";
 import BuyLogo from './assets/images/buy-logo.svg'; 
+import { ReactComponent as CloseIcon } from './assets/images/clos.svg';
+import {ReactComponent as DropdownICon} from './assets/images/menu-dropdown.svg';
 
 class Main extends Component {
   state = {
@@ -24,7 +27,7 @@ class Main extends Component {
     this.setState(prevState => ({isDarkMode: !prevState.isDarkMode}))
   }
 
-  render() {
+  render() { 
     const {isDarkMode} = this.state
     const modeClassName = isDarkMode ? 'dark-mode' : 'light-mode'
     const buttonText = isDarkMode ? <DarkMode /> : <LightMode />

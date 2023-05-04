@@ -25,6 +25,26 @@ body{
   font-family: 'urbanist-semibold';
   src: url(./assets/fonts/Urbanist-SemiBold.ttf);
 }
+
+/************************** Body Scroll Section Starts from here *************************/
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #353535;
+  border-radius: 50px;  
+}
+/************************** Body Scroll Section Ends from here *************************/
+
+
 body .light-mode {
   background: #FFFFFF;
   will-change: transform;
@@ -86,7 +106,7 @@ body .light-mode p, body .light-mode a{
 .logo-nav {
   align-items: center;
   -webkit-column-gap: 24px;
-  column-gap: 24px;
+  column-gap: 16px;
   display: flex;
   width: 70%;
 }
@@ -99,7 +119,7 @@ body .light-mode p, body .light-mode a{
   padding: 0!important;
 } 
 .header-logo img {
-  width: 110px!important;
+  width: 110px;
 }
 .headermore_row {
   align-items: center;
@@ -112,8 +132,8 @@ a.header-more {
   display: flex;
 }
 .header-more svg {
-  height: 18px!important;
-  width: 18px!important;
+  height: 18px;
+  width: 18px;
 }
 .dark-mode .header-more svg path{
   fill: #FFFFFF;
@@ -273,7 +293,7 @@ a.header-logo {
 }
 ul.navlink {
   align-items: center;
-  column-gap: 24px;
+  column-gap: 16px;
   display: flex;
   margin: 0;
   padding-bottom: 0;
@@ -287,7 +307,7 @@ ul.navlink li {
 }
 ul.navlink a {
   color: #fff;
-  font-family: 'urbanist-regular';
+  font-family: 'urbanist-light';
   font-size: 16px;
   text-decoration: none;
   text-transform: capitalize;
@@ -320,7 +340,7 @@ ul.navlink li:hover:after {
 }
 .signin {
   background: #5ed3f0;
-  min-width: 90px;
+  min-width: 73.4px;
   max-width: fit-content;
 }
 .signin:hover{
@@ -334,7 +354,7 @@ ul.navlink li:hover:after {
   color: #FFF;
   font-family: 'urbanist-regular';
   font-size: 15px;
-  height: 34px;
+  height: 30.4px;
   text-transform: capitalize;
   width: 9%;
   text-decoration: none;
@@ -343,7 +363,7 @@ ul.navlink li:hover:after {
   justify-content: center;
 }
 .downloadQRCode {
-  padding: 10px 0px 10px 0px;
+  padding: 12px 0px 12px 0px;
   position: relative;
 }
 .storeicons {
@@ -352,9 +372,9 @@ ul.navlink li:hover:after {
   border-radius: 7px;
   column-gap: 15px;
   display: flex;
-  height: 34px;
+  height: 30.4px;
   justify-content: center;
-  width: 67px;
+  width: 58.4px;
 }
 #headerDownloadApp {
   background-color: #fff;
@@ -428,13 +448,13 @@ button.light-dark {
   fill: #FFFFFF
 }
 a.connect_wal {
-  height: 34px;
+  height: 30.4px;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   cursor: pointer;
   user-select: none;
-  width: 140px;
+  width: 138.4px;
   background: rgb(0, 0, 0);
   border: 1px solid rgb(48, 48, 51);
   color: #FFF;
@@ -452,7 +472,7 @@ a.connect_wal:hover {
   border-color: rgb(94, 211, 240);
 }
 .launch-dex{
-  min-width: 70px;
+  min-width: 58.4px;
 }
 .launch-dex:hover{
   background: #5ed3f0;
@@ -527,6 +547,20 @@ a.connect_wal:hover {
   border-radius: 5px;
   padding: 5px 10px;
 }
+#subheader ul.navlink {
+  column-gap: 24px;
+}
+#subheader ul.navlink li a{
+  color: rgba(255,255,255,0.5);
+  font-family: 'urbanist-medium';
+  font-weight: 300;
+}
+#subheader ul.navlink li a:hover{
+  color: #FFFFFF;
+}
+#subheader ul.navlink li.active a{
+  color: #FFFFFF;
+}
 #subheader .logo-nav a img{
   filter: grayscale(1);
 }
@@ -540,4 +574,174 @@ a.connect_wal:hover {
 }
 #subheader ul.navlink li.card.active:after{
   width: 100%;
+}
+.light-mode #subheader ul.navlink li a{
+  color: rgba(0,0,0,0.5);
+}
+.light-mode #subheader ul.navlink li a:hover{
+  color: #000000;
+}
+.light-mode #subheader ul.navlink li.active a{
+  color: #000000;
+}
+
+@media screen and (max-width: 1350px){
+  #header-row .MuiToolbar-regular{
+    padding: 0px 20px;
+  }
+  .header-logo img {
+    width: 100px;
+  }
+  .header-more svg {
+    height: 16px;
+    width: 16px;
+  }
+  #main-header ul.navlink{
+    column-gap: 15px;
+  }
+  #main-header .logo-nav{
+    column-gap: 15px;
+  }
+  a.connect_wal{
+    width: fit-content;
+    padding: 0px 10px;
+  }
+  .launch-dex, .signin{
+    width: fit-content;
+    padding: 0px 12px;
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 1300px){
+  .header-logo img {
+    width: 90px;
+  }
+  .header-more svg {
+    height: 14px;
+    width: 14px;
+  }
+  #main-header ul.navlink{
+    column-gap: 15px;
+  }
+  #main-header .logo-nav{
+    column-gap: 15px;
+  }
+  a.connect_wal{
+    width: fit-content;
+    padding: 0px 8px;
+    font-size: 14px;
+  }
+  .launch-dex, .signin{
+    width: fit-content;
+    padding: 0px 10px;
+    min-width: unset;
+    font-size: 14px;
+  }
+  #main-header ul.navlink a{
+    font-size: 14px;
+  }
+  #main-header ul.navlink li{
+    display: flex;
+  }
+}
+@media screen and (max-width: 1180px){
+  #main-header{
+    height: 50px;
+  }
+  #header-row .MuiToolbar-regular{
+    padding: 0px 15px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  #main-header ul.navlink{
+    column-gap: 10px;
+  }
+  #main-header .logo-nav{
+    column-gap: 10px;
+  }
+  #downloadlink svg {
+    width: 12px;
+    height: auto;
+  }
+  div#downloadlink {
+    width: fit-content;
+    padding: 0px 10px;
+    column-gap: 10px;
+  }
+  #headerDownloadApp .download-box .text{
+    font-size: 13px;
+  }
+  #headerDownloadApp .download-box .qr-box{
+    width: 70px;
+  }
+  #headerDownloadApp .download-box .qr-box img{
+    width: 70px;
+    height: 70px;
+  }
+  .header-logo img {
+    width: 80px;
+  }
+  .login-buttons svg {
+    width: 14px;
+  }
+  .launch-dex, .signin, a.connect_wal{
+    font-size: 13px;
+    height: 28.4px;
+  }
+}
+@media screen and (max-width: 1080px){
+  .downloadQRCode{
+    display: none;
+  }
+  #main-header .logo-nav{
+    width: 74%;
+  }
+  #main-header .login-buttons{
+    width: 26%
+  }
+}
+@media screen and (max-width: 1020px){
+  #main-header{
+    height: 42px;
+  }
+  #header-row .MuiToolbar-regular{
+    min-height: 42px;
+    max-height: 42px;
+  }
+  #main-header ul.navlink a{
+    font-size: 12px;
+  }
+  #main-header ul.navlink{
+    column-gap: 12px;
+  }
+  .launch-dex, .signin, a.connect_wal {
+    font-size: 12px;
+    height: 26.4px;
+  }
+}
+@media screen and (max-width: 950px){
+  .header-logo img {
+    width: 70px;
+  }
+  .header-more svg {
+    height: 12px;
+    width: 12px;
+  }
+  #main-header ul.navlink{
+    column-gap: 10px;
+  }
+  #main-header .logo-nav {
+    width: 74%;
+  }
+  #main-header .login-buttons {
+    width: 26%;
+    column-gap: 6px;
+  }
+  .launch-dex, .signin, a.connect_wal {
+    font-size: 11px;
+    height: 24.4px;
+  }
+  #main-header .logo-nav {
+    column-gap: 8px;
+  }
 }

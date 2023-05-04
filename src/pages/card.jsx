@@ -116,7 +116,7 @@ function CardHomePage()
                                         <td className="token">
                                             <p>5.</p>
                                             <Avalanche />
-                                            <h3>Ethereum</h3>
+                                            <h3>Avalanche</h3>
                                         </td>
                                         <td className="price"><p>$0.00</p></td>
                                         <td className="bal_usd"><p>$0.00</p></td>
@@ -125,6 +125,10 @@ function CardHomePage()
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                        <div className="fgerfe dfsd">
+                            <h1>Recent Transactions</h1>
+                            <a className="btn-sd"  href="#">View All</a>
                         </div>
                     </div>
                     <div className="col crd_div">

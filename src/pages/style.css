@@ -121,6 +121,18 @@ button.card_btn:hover{
 .light-mode button.card_btn span {
     color: #000000 !important;
 }
+.trhs .token svg {
+    width: 40px;
+    height: 40px;
+}
+.trhs .token p {
+    width: unset !important;
+    font-size: 16px;
+    color: #FFFFFF !important;
+}
+.trhs .token {
+    gap: 20px;
+}
 
 
 /* balance col */
@@ -186,10 +198,13 @@ a.btn-sd:hover{
     align-items: center;
     justify-content: space-between;
 }
+.trhs:hover{
+    border-color: #5ED3F0
+}
 .token {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .token p {
     font-size: 16px;
@@ -216,7 +231,7 @@ a.btn-sd:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0px;
+    padding: 50px 0px 30px 0px;
 }
 .fgerfe h1 {
     font-size: 24px;
@@ -233,4 +248,111 @@ a.btn-sd:hover{
 }
 .wal__tbl table {
     width: 100%;
+}
+.wal__tbl table tr td, .wal__tbl table th{
+    padding: 0px;
+}
+.token p {
+    font-size: 14px;
+    font-family: 'urbanist-medium';
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7) !important;
+    width: 14px;
+}
+.token svg{
+    width: 24px;
+    height: 24px;
+}
+.token h3 {
+    margin: 0px;
+    font-size: 14px;
+    font-family: 'urbanist-semibold';
+    font-weight: 400;
+}
+.price p, .bal_usd p, .bal_crypto p {
+    margin: 0px;
+    font-size: 15px;
+    font-family: 'urbanist-regular';
+}
+td.deposit {
+    text-align: end;
+}
+.wal__tbl tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px 0px 0px;
+}
+.deposit a {
+    width: 70.4px;
+    height: 30px;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'urbanist-medium';
+    text-decoration: none;
+}
+.wal__tbl td.token {
+    width: 160px;
+}
+td.price, td.bal_usd, td.bal_crypto {
+    width: 120px;
+}
+.wal__tbl tr th:nth-child(1) {
+    width: 160px;
+    padding: 0px;
+}
+.wal__tbl tr th:nth-child(2), .wal__tbl tr th:nth-child(3), .wal__tbl tr th:nth-child(4) {
+    width: 120px;
+    padding: 0px;
+}
+th:nth-child(5){
+    width: 72px;
+    text-align: right !important;
+}
+td.deposit {
+    width: 72px;
+    margin-right: 0px;
+}
+.deposit a:hover {
+    border: 1px solid #5ED3F0;
+}
+.wal__tbl {
+    padding-bottom: 50px;
+}
+.fgerfe.dfsd {
+    border-top: 1px solid #303033;
+    border-bottom: 1px solid #303033;
+    padding-bottom: 50px;
+}
+.wal__tbl table thead tr {
+    margin-top: 0px;
+}
+.light-mode .token-pric p:nth-child(2){
+    color: rgba(0, 0, 0, 0.5);
+}
+.light-mode .token p{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+.light-mode .wal__tbl table th{
+    color: rgba(0, 0, 0, 0.5);
+}
+.light-mode .token-div{
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.light-mode .trhs, .light-mode a.btn-sd, .light-mode .deposit a, .light-mode button.card_btn{
+    border: 1px solid rgb(221, 221, 221);
+}
+.light-mode a.btn-sd:hover, .light-mode .deposit a:hover{
+    border-color: #5ED3F0;
+}
+.light-mode button.card_btn.active{
+    border: 1.5px solid #5ED3F0;
+}
+.light-mode .fgerfe.dfsd{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-top: 1px solid rgb(221, 221, 221);
 }
