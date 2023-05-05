@@ -132,6 +132,13 @@ function CardHomePage()
                         </div>
                     </div>
                     <div className="col crd_div">
+                        <div className="card_bal">
+                            <div className="balance">
+                                <h1>NCX Card <span>Balance</span></h1>
+                                <h2>$0.00</h2>
+                            </div>
+                            <a className="btn-sd" href="#">Top Up</a>
+                        </div>
                         <div className="ncx_card_tabs">
                             <div className={toggleState === 1 ? "ncx_card  active" : "ncx_card"}>
                                 <img src={WhiteCard} alt="ncx-card"/>

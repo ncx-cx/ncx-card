@@ -18,6 +18,7 @@ import BuyLogo from './assets/images/buy-logo.svg';
 import MobileHeader from './assets/components/header';
 import { ReactComponent as CloseIcon } from './assets/images/clos.svg';
 import {ReactComponent as DropdownICon} from './assets/images/menu-dropdown.svg';
+import SplashScreen from "./assets/components/splash/splash";
 
 class Main extends Component {
   state = {
@@ -35,6 +36,7 @@ class Main extends Component {
 
     return (
       <div className={`mode ${modeClassName}`}>
+        <SplashScreen />
         <div id="header-row">
           <div className="MuiToolbar-regular">
             <div id="main-header" class="desktop">

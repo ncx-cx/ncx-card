@@ -1,6 +1,9 @@
 div#header-newmobile {
     display: none;
 }
+.row.card-balance .crd_div .card_bal {
+    display: none;
+}
 @media screen and (max-width: 900px){
     #main-header{
         display: none;
@@ -156,13 +159,107 @@ div#header-newmobile {
     #subheader ul.navlink{
         column-gap: 10px;
     }
-    .row.card-balance .balance{
-        display: none;
-    }
     .row.card-balance .crd_div{
         width: 100%;
         justify-content: center;
-        padding: 0px 20px;
-
+        order: 1;
+    }
+    .row.card-balance{
+        flex-direction: column;
+        width: 100%;
+    }
+    .row.card-balance .balance{
+        display: flex;
+        width: 100%;
+        order: 2;
+        flex-direction: column;
+    }
+    .row.card-balance .crd_div .card_bal .balance {
+        order: 1 !important;
+    }
+    .row.card-balance .crd_div .card_bal a.btn-sd{
+        order: 2;
+    }
+    .card__gers {
+        padding: 40px 20px;
+    }
+    .row.card-balance .crd_div .card_bal {
+        display: flex;
+        padding-bottom: 20px;
+    }    
+    .row.card-balance .balance .card_bal {
+        display: none;
+    }
+    .balance h1, .balance h2{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    a.btn-sd{
+        width: 102px;
+        height: 33.3px;
+    }
+    .token-div .trhs {
+        width: 100%;
+        padding: 0px;
+        justify-content: space-around;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .token-div{
+        flex-direction: column;
+        order: 2;
+        padding: 20px 0px 0px 0px;
+        border-bottom: 0px;
+    }
+    .fgerfe {
+        order: 1;
+        padding: 60px 0px 0px 0px;
+    }
+    .wal__tbl {
+        order: 3;
+        padding-top: 30px;
+    }
+    .fgerfe.dfsd {
+        order: 4;
+    }
+    .trhs .token {
+        width: 40%;
+        gap: 10px;
+    }
+    .token-pric {
+        width: 40%;
+    }
+    .token-pric p:nth-child(1), .token-pric p:nth-child(2){
+        text-align: end;
+    }
+    .fgerfe a.btn-sd {
+        font-size: 14px;
+        width: 88px;
+        height: 32px;
+    }
+    .wal__tbl tr th:nth-child(2), .wal__tbl table tr td:nth-child(2),
+    .wal__tbl tr th:nth-child(4), .wal__tbl table tr td:nth-child(4){
+        display: none;
+    }
+    .token h3{
+        font-family: 'urbanist-medium' !important;
+    }
+    .token p{
+        width: 10px;
+    }
+    .wal__tbl tr th:nth-child(1) {
+        width: 130px;
+    }
+    .wal__tbl tr th:nth-child(3) {
+        width: 100px;
+    }
+    th:nth-child(5){
+        width: 100px;
+    }
+    .splashScreen{
+        display: none !important;
+    }
+    body{
+        overflow: visible !important;
     }
 }

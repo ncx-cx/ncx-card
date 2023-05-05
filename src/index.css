@@ -1,5 +1,6 @@
 body{
   margin: 0px;
+  background: #000000;
 }
 @font-face {
   font-family: 'hauora-bold';
@@ -43,7 +44,6 @@ body{
   border-radius: 50px;  
 }
 /************************** Body Scroll Section Ends from here *************************/
-
 
 body .light-mode {
   background: #FFFFFF;
