@@ -1,0 +1,168 @@
+div#header-newmobile {
+    display: none;
+}
+@media screen and (max-width: 900px){
+    #main-header{
+        display: none;
+    }
+    #header-row .MuiToolbar-regular{
+        min-height: inherit !important;
+        max-height: inherit !important;
+    }
+    div#header-newmobile {
+        display: block;
+    }
+    .navigation-one {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .mobile-toogle {
+        order: 2;
+    }
+    .mobile-logo{
+        order: 1;
+        display: flex;
+    }
+    .navigation{
+        padding: 15px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: #000000;
+        box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+        justify-content: space-between;
+    }
+    .mobile-toogle {
+        width: fit-content;
+        text-align: left !important;
+        height: 17px;
+    }
+    button.hamburger {
+        background: none !important;
+        border: 0px;
+        padding: 0px !important;
+        transform: rotate(180deg);
+    }
+    .clols {
+        display: none;
+    }
+    .hamburger svg {
+        width: 17px;
+        height: 17px;
+    }
+    .mplo {
+        display: flex;
+    }
+    .hamburger svg path{
+        fill: #FFFFFF;
+    }
+    div#header-newmobile.header-expanded.avtive .mplo {
+        display: none;
+    }
+    div#header-newmobile.header-expanded.avtive .clols {
+        display: flex;
+    }
+    .navigation-menu.expanded {
+        position: fixed;
+        top: 0px;
+        width: 100% !important;
+        padding: 70px 0px 0px 0px;
+        background: #000000;
+        height: 100vh;
+        z-index: -1;
+        left: 0px;
+    }
+    .navigation-menu {
+        margin-left: auto;
+    }
+    .navigation-menu ul {
+        display: none;
+    }
+    .navigation-menu.expanded ul {
+        display: block;
+        padding: 0px;
+    }
+    .navigation-menu.expanded ul li {
+        padding: 13px 10px;
+        margin: 0px !important;
+        list-style-type: none;
+    }
+    .navigation-menu.expanded ul li a {
+        font-size: 19px;
+        line-height: 32px;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: 'urbanist-regular' !important;
+        width: fit-content;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+    .navigation-menu li a {
+        text-decoration: none;
+        display: block;
+    }
+    #header-newmobile .navigation-menu.expanded ul li a.launching-btn {
+        width: 100% !important;
+        font-size: 18px !important;
+        padding: 10px 15px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent !important;
+        border: 1.5px solid #5ED3F0 !important;
+    }
+    .header-logo {
+        padding: 0px 0px 0px 0px !important;
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+    .header-logo a {
+        display: flex !important;
+    }
+    .header-logo a img {
+        width: 110px !important;
+    }
+
+    /* Subheader styling starts from here */
+    #subheader ul.navlink li a{
+        font-size: 14px !important;
+    }
+    #subheader {
+        width: 90% !important;
+        padding: 0px !important;
+        margin: 0 auto !important;
+        position: relative;
+        margin-top: 20px !important;
+    }
+    #subheader .logo-nav a img {
+        width: 20px;
+        height: 20px;
+    }
+    #subheader .logo-nav a{
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    #subheader .logo-nav{
+        width: fit-content;
+    }
+    #subheader .menu{
+        width: fit-content;
+    }
+    #subheader ul.navlink{
+        column-gap: 10px;
+    }
+    .row.card-balance .balance{
+        display: none;
+    }
+    .row.card-balance .crd_div{
+        width: 100%;
+        justify-content: center;
+        padding: 0px 20px;
+
+    }
+}

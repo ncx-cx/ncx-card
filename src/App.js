@@ -15,6 +15,7 @@ import { ReactComponent as Apple } from './assets/images/apple.svg';
 import { ReactComponent as Google } from './assets/images/google.svg'; 
 import QrCode from "./assets/images/ncx-QRcode.svg";
 import BuyLogo from './assets/images/buy-logo.svg'; 
+import MobileHeader from './assets/components/header';
 import { ReactComponent as CloseIcon } from './assets/images/clos.svg';
 import {ReactComponent as DropdownICon} from './assets/images/menu-dropdown.svg';
 
@@ -157,6 +158,8 @@ class Main extends Component {
                 <a href="#" className="connect_wal">Connect Wallet</a>
               </div>
             </div>
+
+            <MobileHeader />
           </div>
         </div>
         <div id="subheader">
