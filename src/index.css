@@ -53,9 +53,9 @@ body .light-mode {
 }
 body .dark-mode{
   background: #000000;
-  will-change: transform;
+  /* will-change: transform;
   transform: perspective(1px) translateZ(0px);
-  transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s; */
 }
 body .dark-mode h1, body .dark-mode h2, body .dark-mode h3, body .dark-mode h4, body .dark-mode h5, body .dark-mode h6,
 body .dark-mode p, body .dark-mode a{
