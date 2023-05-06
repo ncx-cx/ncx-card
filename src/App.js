@@ -41,7 +41,7 @@ class Main extends Component {
           <div className="MuiToolbar-regular">
             <div id="main-header" class="desktop">
               <div className="logo-nav">
-                <a className="header-logo" href="https://ncx.cx">
+                <a className="header-logo" href="https://card.ncx.cx">
                   <img src={NCXLogo} alt="site-logo" className="dark" />
                   <img src={NCXWhiteLogo} alt="site-logo" className="light" />
                 </a>
@@ -59,8 +59,8 @@ class Main extends Component {
                             <div class="main_service_wrapper">
                               <div class="community_inner">
                                 <div class="main_service">
-                                  <a href="/rewards">Rewards Program</a>
-                                  <a href="/market-insights">News & Insights</a>
+                                  <a href="https://ncx.cx/rewards">Rewards Program</a>
+                                  <a href="https://ncx.cx/market-insights">News & Insights</a>
                                   <a href="https://ncx.cx/market-makers">Market Makers</a>
                                   <a href="https://ncx.cx/institutional">Institutional Services</a>
                                   <a href="https://ncx.cx/ncx-otc">OTC</a>
@@ -78,8 +78,8 @@ class Main extends Component {
                               </div>
                               <div class="social_links">
                                 <div class="social_link_inner">
-                                  <a href="/about-us">About Us</a>
-                                  <a href="/market-insights">Media & Press</a>
+                                  <a href="https://ncx.cx/about-us">About Us</a>
+                                  <a href="https://ncx.cx/market-insights">Media & Press</a>
                                   <a href="https://ncx.cx/user-agreement">User Agreement</a>
                                   <a href="https://ncx.cx/kyc-aml-policy">AML & KYC Policy</a>
                                   <a href="https://ncx.cx/privacy-policy">Privacy Policy</a>
