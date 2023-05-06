@@ -164,6 +164,14 @@ class Main extends Component {
             <MobileHeader />
           </div>
         </div>
+        
+        <div className="mobile__foter">
+          <div className="container">
+            <button type="button" onClick={this.onClickButton} className="light-dark">{buttonText}</button>
+            <a href="#" className="connect_wal">Connect Wallet</a>
+          </div>
+        </div>
+
         <div id="subheader">
             <div className="logo-nav">
               <a href="https://ncx.cx/buy-crypto">

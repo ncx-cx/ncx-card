@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import './header.css';
 import { ReactComponent as CloseIcon } from '../images/clos.svg';
 import NCXWhiteLogo from '../images/new_sitelogo.svg';
+import NCXBlackLogo from '../images/ncx-blacklogo.svg';
 
 function NCXCardHeader()
 {
@@ -84,7 +85,10 @@ function NCXCardHeader()
                     className="header-logo"
                     sx={{ mr: 2 }}
                     >
-                    <a href="https://ncx.cx/"><img src={NCXWhiteLogo} alt="NCX-Logo" /></a>
+                    <a href="https://ncx.cx/">
+                        <img className="lght" src={NCXWhiteLogo} alt="NCX-Logo" />
+                        <img className="drk" src={NCXBlackLogo} alt="NCX-Logo" />
+                    </a>
                 </button>
                 </div>
             </div>

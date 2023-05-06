@@ -199,7 +199,7 @@ a.btn-sd:hover{
     justify-content: space-between;
 }
 .trhs:hover{
-    border-color: #5ED3F0
+    border-color: #5ED3F0 !important;
 }
 .token {
     display: flex;
@@ -355,4 +355,22 @@ td.deposit {
 .light-mode .fgerfe.dfsd{
     border-bottom: 1px solid rgb(221, 221, 221);
     border-top: 1px solid rgb(221, 221, 221);
+}
+
+@media screen and (max-width: 1200px){
+    .card__gers .container{
+        padding: 0px 20px;
+    }
+    .row.card-balance .balance {
+        width: 63%;
+    }
+    .row.card-balance .crd_div {
+        width: 32%;
+    }
+    #subheader .logo-nav{
+        width: 65%;
+    }
+    #subheader .menu{
+        width: 35%;
+    }
 }
