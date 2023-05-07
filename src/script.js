@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     $('.splashScreen').delay(8300).queue(function(){
       $('.splashScreen').addClass("visibleSplash");
-      $('.loadingContainer').delay(8000).addClass('splashdone');
+      $('.loadingContainer').delay(8000).addClass('splashdone').animate({height: '0px'}, 1000);
       $('body').css({overflow: 'visible'});
       $('header.main-header').addClass("zindex-visible");
     });

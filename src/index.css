@@ -248,6 +248,7 @@ a.header-more {
 .connect_links .box a {
   margin: 12px 0;
   text-decoration: none;
+  margin-bottom: 0px;
 }
 .connect_links .box a {
   margin-top: 0!important;

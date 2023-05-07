@@ -73,7 +73,7 @@ class Main extends Component {
                                   <a href="#">Claim Airdrop</a>
                                   <a href="#">Presale Dashboard</a>
                                   <a href="#">Referral Program</a>
-                                  <a href="#">Official Telegram</a>
+                                  <a href="https://t.me/NCX_Official" target="_blank" rel="noreferrer">Official Telegram</a>
                                 </div>
                               </div>
                               <div class="social_links">
@@ -98,8 +98,8 @@ class Main extends Component {
                             <div class="box">
                               <div class="boxx-links">
                                 <a href="https://ncx.cx/faq">FAQ</a>
-                                <a href="#">Open Support Ticket</a>
-                                <a href="#">Support via Telegram</a>
+                                <a href="https://my.ncx.cx/en/helpdesk/chat" target="_blank" rel="noreferrer">Open Support Ticket</a>
+                                <a href="https://t.me/NCX_Official" target="_blank" rel="noreferrer">Support via Telegram</a>
                               </div>
                               <h4>Social Media</h4>
                               <div class="social-icons">
